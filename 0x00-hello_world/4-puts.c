@@ -1,7 +1,8 @@
 #include <stdio.h>
-/*
- * Function that prints
- * a sentence
+/**
+ * main - prints a string
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
