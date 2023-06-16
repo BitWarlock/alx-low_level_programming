@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints all alphabets using putchar
+ * main - prints 0-9 using putchar
  *
  * Return: 0 (success)
  */
