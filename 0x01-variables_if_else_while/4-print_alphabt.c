@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints all alphabets using putchar
+ * main - prints all alphabets except e and q using putchar
  *
  * Return: 0 (success)
  */
