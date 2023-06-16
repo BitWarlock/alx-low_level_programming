@@ -8,6 +8,7 @@
 int main(void)
 {
 	int a, b, c, d;
+	int first = 1;
 
 	for (a = 0; a < 10; a++)
 	{
@@ -15,18 +16,23 @@ int main(void)
 		{
 			for (c = 0; c < 10; c++)
 			{
-				for (d = 1; d < 10; d++)
+				for (d = 0; d < 10; d++)
 				{
+					if (!first)
+					{
+						putchar(',');
+						putchar(' ');
+					}
+					else
+					{
+						first = 0;
+					}
+
 					putchar(a + '0');
 					putchar(b + '0');
 					putchar(' ');
 					putchar(c + '0');
 					putchar(d + '0');
-					if (d < 9)
-					{
-						putchar(',');
-						putchar(' ');
-					}
 				}
 			}
 		}
