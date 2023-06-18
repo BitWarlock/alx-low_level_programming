@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 /**
- * main - prints numbers 0-9 using putchar
+ * main - prints numbers 0-9 using putchar.
  *
  * Return: 0 (success)
  */
-int main(void)
+int	main(void)
 {
-	int a;
+	int	a;
 
 	for (a = 0; a < 10; a++)
 	{
