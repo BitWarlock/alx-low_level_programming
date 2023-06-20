@@ -9,10 +9,10 @@
 
 int	main(void)
 {
-	int	sum;
+	int	sum, counter;
 
 	sum = 0;
-	for (int counter = 1; counter < 1024; counter++)
+	for (counter = 1; counter < 1024; counter++)
 	{
 		if (counter % 3 == 0 || counter % 5 == 0)
 		{
