@@ -1,27 +1,17 @@
 #include <stdio.h>
 
 /**
- * main - entry point
- * print_fibonacci - prints first 50 fibonacci numbers.
- * 
- * @count: number of fibonacci.
- * Return: void
+ * main - prints count numbers of fibonacci.
+ *
+ * Return: 0 (success)
  */
-
-void	print_fibonacci(int count);
 
 int	main(void)
 {
-	print_fibonacci(50);
-
-	return (0);
-}
-
-void	print_fibonacci(int count)
-{
-	int i;
-	long int fib1 = 1;
-	long int fib2 = 2;
+	int	count;
+	int	i;
+	long int	fib1 = 1;
+	long int	fib2 = 2;
 
 	printf("%ld, %ld", fib1, fib2);
 
@@ -35,4 +25,5 @@ void	print_fibonacci(int count)
 		fib2 = next;
 	}
 	printf("\n");
+	return (0);
 }
