@@ -8,7 +8,7 @@
 
 int	main(void)
 {
-	int	count;
+	int	count = 50;
 	int	i;
 	long int	fib1 = 1;
 	long int	fib2 = 2;
