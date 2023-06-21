@@ -1,64 +1,39 @@
 #include <stdio.h>
 
 /**
- * getnumdigits - Returns the number of digits in a number
- *
- * @num: The number
- *
- * Return: Number of digits
- */
-
-int	getnumdigits(int num)
-{
-	int	count = 0;
-
-	if (num == 0)
-		return (1);
-
-	while (num != 0)
-	{
-		num /= 10;
-		count++;
-	}
-
-	return (count);
-}
-
-/**
- * main - Entry point
- *
- * Description: Prints the first 98 Fibonacci numbers
- * starting with 1 and 2, separated by commas and spaces,
- * followed by a new line.
- *
- * Return: Always 0 (Success)
+ * main - prints the first 98 Fibonacci numbers.
+ * Return: always 0 (success)
  */
 
 int	main(void)
 {
-	int	count;
-	unsigned long fib1 = 1, fib2 = 2, sum;
-	int	initial;
+	unsigned long int a, b, c, bof1, bof2, cof1, cof2;
 
-	initial = getnumdigits(fib2) - getnumdigits(fib1);
+	b = 1;
+	c = 2;
 
-	for (count = 1; count <= 98; count++)
+	printf("%lu", b);
+
+	for (a = 1; a < 91; a++)
 	{
-		if (count > 1)
-			printf(", ");
+		printf(", %lu", c);
+		c = c + b;
+		b = c - b;
+	}
 
+	bof1 = b / 1000000000;
+	bof2 = b % 1000000000;
+	cof1 = c / 1000000000;
+	cof2 = c % 1000000000;
 
-		while (initial > 0)
-		{
-			printf("%d", 0);
-			initial--;
-		}
-
-		printf("%lu", fib1);
-
-		sum = fib1 + fib2;
-		fib1 = fib2;
-		fib2 = sum;
+	for (a = 92; a < 99; ++a)
+	{
+		printf(", %lu", cof1 + (cof2 / 1000000000));
+		printf("%lu", cof2 % 1000000000);
+		cof1 = cof1 + bof1;
+		bof1 = cof1 - bof1;
+		cof2 = cof2 + bof2;
+		bof2 = cof2 - bof2;
 	}
 
 	printf("\n");
