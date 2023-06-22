@@ -11,7 +11,7 @@ int	main(void)
 	uint64_t	n;
 	uint64_t	divisor;
 
-	n = 600851475143;
+	n = 612852475143;
 	divisor = 1;
 	while (n != 1)
 	{
