@@ -19,6 +19,6 @@ int	main(void)
 		while (!(n % divisor))
 			n /= divisor;
 	}
-	printf("The largest prime factor is %lu\n", divisor);
+	printf("%lu\n", divisor);
 	return (0);
 }
