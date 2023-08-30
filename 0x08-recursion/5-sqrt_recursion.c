@@ -3,7 +3,7 @@
 /**
  * sqrt69 - Recursive helper for calculating square root.
  * @n: number.
- * @a: number.
+ * @i: number.
  * Return: square root of n.
  */
 
