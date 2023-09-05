@@ -11,9 +11,9 @@ char	*_strdup(char *str)
 {
 	unsigned int	len, i;
 	char	*ptr;
+
 	if (str == NULL)
 		return (NULL);
-
 	i = 0;
 	len = 0;
 	while (str[len])
