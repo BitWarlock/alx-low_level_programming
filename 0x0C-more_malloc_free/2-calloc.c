@@ -3,10 +3,10 @@
 
 
 /**
- * _memset = function that fills memory.
+ * _memset - function that fills memory.
  * @s: memory pointer.
  * @n: size to fill.
- * @: the byte.
+ * @b: the byte.
  * Return: pointer to new buffer.
  */
 
