@@ -12,17 +12,11 @@ char	*rot13(char *s)
 	char	old[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char	new[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	i = 0;
-	while (s[i])
+	for (i = 0; s[i]; i++)
 	{
-		j = 0;
-		while (old[j])
-		{
+		for (j = 0; old[j]; j++)
 			if (s[i] == old[j])
 				s[i] = new[j];
-			j++;
-		}
-		i++;
 	}
 	return (s);
 }
