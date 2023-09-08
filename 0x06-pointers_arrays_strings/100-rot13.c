@@ -9,14 +9,20 @@
 char	*rot13(char *s)
 {
 	int	i, j;
+
 	char	old[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char	new[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	for (i = 0; s[i]; i++)
 	{
 		for (j = 0; old[j]; j++)
+		{
 			if (s[i] == old[j])
+			{
 				s[i] = new[j];
+				break ;
+			}
+		}
 	}
 	return (s);
 }
