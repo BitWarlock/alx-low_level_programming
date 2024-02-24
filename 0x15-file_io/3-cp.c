@@ -64,7 +64,7 @@ int main(int argc, char *argv[])
 	wr = close(to);
 	if (wr < 0)
 	{
-		dprintf(2, "Error: Can't close fd %d\n", from);
+		dprintf(2, "Error: Can't close fd %d\n", to);
 		exit(100);
 	}
 	return (0);
