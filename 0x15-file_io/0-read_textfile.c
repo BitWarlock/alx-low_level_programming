@@ -22,10 +22,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (!str)
 		return (0);
 	res = read(fd, str, letters);
-	if (!res)
+	if (res < 0)
 		return (0);
 	res = write(1, str, res);
-	if (!res)
+	if (res < 0)
 		return (0);
 	close(fd);
 	free(str);
