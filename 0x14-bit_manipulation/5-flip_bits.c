@@ -21,5 +21,5 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 			bits++;
 		i >>= 1;
 	}
-	return (bits);	
+	return (bits);
 }
