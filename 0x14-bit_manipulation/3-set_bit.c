@@ -2,8 +2,8 @@
 
 /**
 * set_bit - function that sets the value of a bit to 1 at a given index.
-* @a - number to change its bit.
-* @i - index of the bit to change.
+* @a: number to change its bit.
+* @i: index of the bit to change.
 * Return: 1 if success, -1 otherwise.
 */
 
